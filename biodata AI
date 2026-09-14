@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Saya</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .biodata {
+            width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .foto {
+            display: block;
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            width: 35%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="biodata">
+
+        <h1>BIODATA DIRI</h1>
+
+        <img src="foto.jpg" alt="Foto Saya" class="foto">
+
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>Iqazul Himam</td>
+            </tr>
+
+            <tr>
+                <td>Tempat, Tanggal Lahir</td>
+                <td>Pelaihari, 1 Januari 2008</td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>Laki-laki</td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td>Pelaihari, Kalimantan Selatan</td>
+            </tr>
+
+            <tr>
+                <td>Sekolah</td>
+                <td>SMKN 1 Pelaihari</td>
+            </tr>
+
+            <tr>
+                <td>Jurusan</td>
+                <td>Desain Komunikasi Visual</td>
+            </tr>
+
+            <tr>
+                <td>Hobi</td>
+                <td>Fotografi, Videografi, Editing</td>
+            </tr>
+
+            <tr>
+                <td>Cita-cita</td>
+                <td>Content Creator</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>

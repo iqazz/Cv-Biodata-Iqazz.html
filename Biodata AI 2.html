@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biodata - Iqazul Himam</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef1f5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+
+        /* HEADER */
+        .header {
+            background: #111827;
+            color: white;
+            border-radius: 25px;
+            padding: 45px;
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+        .header-text h1 {
+            font-size: 42px;
+            margin-bottom: 5px;
+        }
+
+        .header-text p {
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 7px 15px;
+            border-radius: 20px;
+            background: #374151;
+            color: white;
+            font-size: 13px;
+        }
+
+        /* CARD */
+        .card {
+            background: white;
+            margin-top: 25px;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+        }
+
+        .card h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+            color: #111827;
+        }
+
+        .card h2::after {
+            content: "";
+            display: block;
+            width: 45px;
+            height: 4px;
+            background: #111827;
+            margin-top: 7px;
+            border-radius: 10px;
+        }
+
+        /* DATA DIRI */
+        .data-diri {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .data-box {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+        .data-box span {
+            display: block;
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 3px;
+        }
+
+        .data-box strong {
+            font-size: 16px;
+        }
+
+        /* PROFILE */
+        .profile-text {
+            font-size: 17px;
+            color: #555;
+        }
+
+        /* PENDIDIKAN */
+        .education {
+            border-left: 3px solid #111827;
+            padding-left: 25px;
+        }
+
+        .education-item {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .education-item::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background: #111827;
+            border-radius: 50%;
+            position: absolute;
+            left: -32px;
+            top: 7px;
+        }
+
+        .education-item h3 {
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+
+        .education-item p {
+            color: #64748b;
+        }
+
+        /* EXPERIENCE */
+        .experience {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .experience-box {
+            padding: 25px;
+            background: #f8fafc;
+            border-radius: 15px;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .experience-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .experience-box .number {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        .experience-box h3 {
+            font-size: 17px;
+            margin-top: 8px;
+        }
+
+        /* CONTACT */
+        .contact {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .contact-box {
+            background: #f8fafc;
+            padding: 18px;
+            border-radius: 12px;
+        }
+
+        .contact-box span {
+            display: block;
+            color: #64748b;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 35px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 35px 20px;
+            }
+
+            .header-text h1 {
+                font-size: 32px;
+            }
+
+            .data-diri,
+            .experience,
+            .contact {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <!-- GANTI foto.jpg DENGAN FOTO KAMU -->
+            <img src="Foto iqazz.jpeg" alt="Foto Iqazul Himam" class="profile-photo">
+
+            <div class="header-text">
+                <h1>Iqazul Himam</h1>
+
+                <p>Videographer & Creative Content Creator</p>
+
+                <div class="tag">
+                    Photography • Videography • Creative
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- DATA DIRI -->
+        <div class="card">
+
+            <h2>Data Diri</h2>
+
+            <div class="data-diri">
+
+                <div class="data-box">
+                    <span>Nama</span>
+                    <strong>Iqazul Himam</strong>
+                </div>
+
+                <div class="data-box">
+                    <span>Tempat, Tanggal Lahir</span>
+                    <strong>Banjarmasin, 13 Agustus 2008</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROFIL -->
+        <div class="card">
+
+            <h2>Profil Diri</h2>
+
+            <p class="profile-text">
+                Individu yang berpengalaman dan berspesialisasi
+                dalam videografi dan konten kreatif.
+            </p>
+
+        </div>
+
+
+        <!-- PENDIDIKAN -->
+        <div class="card">
+
+            <h2>Riwayat Pendidikan</h2>
+
+            <div class="education">
+
+                <div class="education-item">
+                    <h3>MTSN 2 Tanah Laut</h3>
+                    <p>2020 — 2023</p>
+                </div>
+
+                <div class="education-item">
+                    <h3>SMKN 1 Pelaihari — DKV</h3>
+                    <p>2023 — 2026</p>
+                </div>
+
+                <div class="education-item">
+                    <h3>Politeknik Negeri Banjarmasin</h3>
+                    <p>2026 — Now</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PENGALAMAN -->
+        <div class="card">
+
+            <h2>Pengalaman</h2>
+
+            <p class="profile-text" style="margin-bottom: 25px;">
+                Berpengalaman di bidang videografi sejak tahun 2024
+                sampai sekarang.
+            </p>
+
+            <div class="experience">
+
+                <div class="experience-box">
+                    <div class="number">01</div>
+                    <h3>Freelance Photographer & Videographer | wedding,Event,Graduation,DLL</h3>
+                </div>
+
+                <div class="experience-box">
+                    <div class="number">02</div>
+                    <h3>Internship Orange Studio</h3>
+                </div>
+
+                <div class="experience-box">
+                    <div class="number">03</div>
+                    <h3>Content Creator Coffeeshop | Kawa Ngopi</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- KONTAK -->
+        <div class="card">
+
+            <h2>Contact Person</h2>
+
+            <div class="contact">
+
+                <div class="contact-box">
+                    <span>WhatsApp</span>
+                    <strong>085821042577</strong>
+                </div>
+
+                <div class="contact-box">
+                    <span>E-Mail</span>
+                    <strong>iqazulhimam2008@gmail.com</strong>
+                </div>
+
+                <div class="contact-box">
+                    <span>Instagram</span>
+                    <strong>@iqazzulhimam</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <h2>Thank You For Your Attention</h2>
+            <p>© 2026 Iqazul Himam</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
