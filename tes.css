@@ -1,0 +1,100 @@
+/*buat variabel warna*/
+:root {
+    --primary-color: #008080;
+    --primary-dark-color: #005a5a;
+    --secondary-color: #fff;
+    --text-color: #1A252c;
+    --background-color: #d4dfea;
+    --accent-color: #ff9800;
+    --bg-light : #f4f7f6;
+    --White : #fff;
+    --text-muted : #666666;
+    --border-color : #e0e0e0;
+    --shadow-soft : 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-hover : 0 8px 24px rgba(0, 0, 0, 0.15);
+    --transition-fast : all 0.3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+}
+
+/* 3. LAYOUT CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 4. HEADER DAN NAVIGASI */
+header {
+    background-color: var(--primary-color);
+    color: var(--White);
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+nav a {
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+nav a {
+    color: var(--White);
+    text-decoration: none;
+    padding: 6px 14px;
+    margin: 0 2px;
+    border-radius: 4px;
+    transition: var(--transition-fast);
+}
+
+nav a:hover, nav a.active {
+    background-color: rgba(255, 255, 255, 0.25);
+    font-weight: bold;
+
+
+main {
+    padding: 40px 0;
+}
+
+.section{
+    margin-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+    
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    color: var(--text-muted);
+}
+
